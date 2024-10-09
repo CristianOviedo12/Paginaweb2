@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.headercontainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(245, 236, 224);
+}
+.menu {  
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.menu ul li{
+    padding: 5px;
+    margin: 1px 20px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: rgb(143, 139, 139);
+}
+
+.maincontainer{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.maincontainer h2{
+    color: rgb(255, 187, 97);
+    font-size: 40px;
+    text-align: center;
+}
+.btnVermas{
+    background-color: white;
+    border: 1px solid rgb(255, 187, 97);
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px;
+    cursor: pointer;
+    color: rgb(255, 187, 97);
+}
+.btnVermas:hover{
+    color: rgb(255, 145, 0);
+}
+/* Ocultar el contenido adicional por defecto */
+.novisible{
+    display: none;
+}
+
+.footer-container{
+    background-color: rgb(245, 236, 224);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+.footer-container h3{
+    color: rgb(143, 139, 139);
+    margin: 0;
+    padding: 0;
+}
+.redes-links{
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.redes-links li{
+    padding: 1px 10px;
+}
+.redes-links i{
+    font-size: 35px;
+}
+.LinkedIn{
+    color: rgb(8, 89, 156);
+}
+.Instagram{
+    color: rgb(199, 14, 159);
+}
+@media (max-width: 768px) {
+    
+    .menu {
+        width: 60%;
+    }
+    .menu ul {
+        justify-content: space-around;
+    }
+    .menu ul li {
+        margin: 1px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+    .menu ul{
+        display: flex;
+        list-style: none;
+        padding: 0;
+    }
+    .menu ul li{
+        padding: 3px 5px;
+        margin: 0px;
+    }
+}
